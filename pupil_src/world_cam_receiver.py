@@ -111,8 +111,7 @@ class PupilWorldStream(object):
                             try:
                                 elapsed_time = time.time() - start_time
                                 print(elapsed_time)
-                                if elapsed_time >= 10:
-                                    print("Sent to Anmol")
+                                if elapsed_time >= 2:
                                     self.send("barcode", {'key' : self.key, 'payload': barcodeData})
                                     start_time = time.time()
 
