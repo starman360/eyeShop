@@ -1,0 +1,105 @@
+/*
+ * Import nib
+ */
+@import 'nib';
+/*
+ * Grab a custom font from Google
+ */
+@import url('http://fonts.googleapis.com/css?family=Quicksand');
+
+/*
+ * Nib provides a CSS reset
+ */
+/*
+ * Store the main color and
+ * background color as variables
+ */
+main-color = #fa5b4d;
+background-color = #faf9f0;
+
+html,body {
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    p {
+        padding-left: 25px;
+    }
+
+    ion-icon {
+        position: absolute;
+        padding-top: 5px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+canvas {
+    position: absolute;
+    right: 50%;
+    top: 25%;
+    transform: translate(50%, 25%);
+}
+
+#foodinfo {
+    overflowY: default;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    p {
+        color: #777;
+    }
+
+    .list-group-item {
+        .left {
+            position: absolute;
+            left: 20px;
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+        }
+    }
+
+    button {
+        position: absolute;
+        bottom: 80px;
+        left: 15px;
+        width: calc(100% - 30px);
+    }
+}
+
+#cart {
+    .left {
+        position: absolute;
+        left: 20px;
+    }
+
+    .right {
+        position: absolute;
+        right: 20px;
+    }
+    li {
+        min-height: 50px;
+    }
+}
+
+ul.nav {
+    height: 60px;
+
+    a.nav-link {
+        height: 60px;
+        font-size: 10px;
+        color: #44;
+
+        ion-icon {
+            font-size: 20px;
+        }
+    }
+}

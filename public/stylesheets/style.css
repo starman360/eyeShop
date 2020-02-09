@@ -1,0 +1,84 @@
+/*
+ * Import nib
+ */
+/*
+ * Grab a custom font from Google
+ */
+@import url("http://fonts.googleapis.com/css?family=Quicksand");
+/*
+ * Nib provides a CSS reset
+ */
+/*
+ * Store the main color and
+ * background color as variables
+ */
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+nav p {
+  padding-left: 25px;
+}
+nav ion-icon {
+  position: absolute;
+  padding-top: 5px;
+}
+.container {
+  margin: 0 auto;
+}
+canvas {
+  position: absolute;
+  right: 50%;
+  top: 25%;
+  -webkit-transform: translate(50%, 25%);
+  -moz-transform: translate(50%, 25%);
+  -o-transform: translate(50%, 25%);
+  -ms-transform: translate(50%, 25%);
+  transform: translate(50%, 25%);
+}
+#foodinfo {
+  overflowY: default;
+}
+#foodinfo h1 {
+  font-weight: bold;
+}
+#foodinfo p {
+  color: #777;
+}
+#foodinfo .list-group-item .left {
+  position: absolute;
+  left: 20px;
+}
+#foodinfo .list-group-item .right {
+  position: absolute;
+  right: 20px;
+}
+#foodinfo button {
+  position: absolute;
+  bottom: 80px;
+  left: 15px;
+  width: calc(100% - 30px);
+}
+#cart .left {
+  position: absolute;
+  left: 20px;
+}
+#cart .right {
+  position: absolute;
+  right: 20px;
+}
+#cart li {
+  min-height: 50px;
+}
+ul.nav {
+  height: 60px;
+}
+ul.nav a.nav-link {
+  height: 60px;
+  font-size: 10px;
+  color: #444;
+}
+ul.nav a.nav-link ion-icon {
+  font-size: 20px;
+}

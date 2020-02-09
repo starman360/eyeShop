@@ -1,0 +1,43 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+		title Eye Shop
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/stylesheets/style.css')
+	body
+		nav.navbar.navbar-light.bg-transparent
+			a.navbar-brand 
+				ion-icon(name="eye-outline") 
+				p Search
+
+		.container
+			block content
+
+		ul.nav.nav-pills.nav-fill.fixed-bottom.bg-white
+			li#homebtn.nav-item
+				a.nav-link
+					ion-icon(name="home")
+					br
+					| Home
+			li#cartbtn.nav-item
+				a.nav-link
+					ion-icon(name="cart")
+					br
+					| Cart
+			li#checkoutbtn.nav-item
+				a.nav-link
+					ion-icon(name="checkmark-circle-outline")
+					br
+					| Cart
+		script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+		script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+		script(src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js")
+		script(src="/socket.io/socket.io.js")
+		script(src="/qr/qrcode.js")
+		script
+			include ../public/js/socket.js
+		script(src="/js/script.js")
+

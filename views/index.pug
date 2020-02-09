@@ -1,0 +1,19 @@
+extend layout
+block content
+
+    #home
+        canvas#canvas
+        #foodinfo(style="display:none")
+            //- h1 FOOD
+            //- h4 Ingredients:
+            //- p STRAWBERRY:  Organic Apple Puree Concentrate, Organic Apple Juice Concentrate, Natural Flavors, Organic Strawberry Juice Concentrate, Pectin, Organic Lemon Juice Concentrate, Fruit and Vegetable Juice for color\r\n(Carrot, Apple, Blackcurrant).\r\n\r\nWILDBERRY:  Organic Apple Puree Concentrate, Organic Apple Juice Concentrate, Organic Strawberry Juice Concentrate, Organic Raspberry Juice Concentrate, Organic Blueberry Juice Concentrate, Natural Flavors,\r\nPectin, Organic Lemon Juice Concentrate, Fruit and Vegetable Juice for color (Carrot, Apple, Blackcurrant).
+
+            //- button#addtocart.btn.btn-success(type="button" class="btn btn-success") Add to Cart  
+            //-     ion-icon(name="cart")
+
+    #cart(style="display:none")
+        ul.list-group
+            
+
+    #checkout(style="display:none")
+        canvas#canvas2
